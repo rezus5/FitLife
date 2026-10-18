@@ -1,7 +1,6 @@
 # Импортируем модуль datetime.
 import datetime as dt
 
-
 # Константы.
 WATER_INTAKE_PER_KG = 30
 MILLILITERS_IN_LITER = 1000
@@ -46,8 +45,7 @@ print("Расчет окончен.")
 current_datetime = dt.datetime.now()
 print(
     f"Дата и время расчета: "
-    f"{current_datetime:{DATETIME_FORMAT}}"
-)
+    f"{current_datetime:{DATETIME_FORMAT}}",)
 
 print()
 print("Будьте здоровы!")
