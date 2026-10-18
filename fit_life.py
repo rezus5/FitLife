@@ -1,4 +1,7 @@
 
+# импортируем модуль datetime
+import datetime as dt
+
 # Знакомство с пользователем.
 print("Здравствуйте, как вас зовут?")
 user_name = input("Введите ваше имя: ").title()
@@ -26,4 +29,11 @@ print(f"Твой индекс массы тела: {rounded_bmi}")
 print(f"Рекомендуемая норма воды: {water_l} л в день")
 
 print()
-print("Расчет окончен. Будьте здоровы!")
+print("Расчет окончен.")
+
+# Выводим текущую дату и время.
+current_datetime = dt.datetime.now()
+print(f"Дата и время расчета: {current_datetime:%d.%m.%Y %H:%M:%S}")
+
+print()
+print("Будьте здоровы!")
