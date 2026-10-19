@@ -7,7 +7,6 @@ MILLILITERS_IN_LITER = 1000
 BMI_ROUND_DIGITS = 1
 DATETIME_FORMAT = "%d.%m.%Y %H:%M:%S"
 
-
 # Знакомство с пользователем.
 print("Здравствуйте, как вас зовут?")
 user_name = input("Введите ваше имя: ").title()
@@ -18,12 +17,9 @@ print("Добро пожаловать,", user_name)
 print("Введите ваш возраст, вес и рост.")
 
 user_age = int(input("Ваш возраст: "))
-user_weight = float(
-    input("Ваш вес (в кг): ").replace(",", ".")
-)
+user_weight = float(input("Ваш вес (в кг): ").replace(",", "."))
 user_height = float(
-    input("Ваш рост (в метрах, например 1.67): ").replace(",", ".")
-)
+    input("Ваш рост (в метрах, например 1.67): ").replace(",", "."))
 
 # Рассчитываем ИМТ.
 bmi = user_weight / (user_height ** 2)
@@ -43,9 +39,7 @@ print("Расчет окончен.")
 
 # Выводим текущую дату и время.
 current_datetime = dt.datetime.now()
-print(
-    f"Дата и время расчета: "
-    f"{current_datetime:{DATETIME_FORMAT}}",)
+print(f"Дата и время расчета: {current_datetime:{DATETIME_FORMAT}}")
 
 print()
 print("Будьте здоровы!")
